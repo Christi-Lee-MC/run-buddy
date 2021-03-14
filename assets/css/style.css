@@ -91,13 +91,16 @@ section {
 }
 /* Hero-Form Style End */
 
-hero-form h3 {
+.hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
 
 .hero-form p {
   margin: 5px 0 15px 0;
+}
+.hero-form label {
+  margin: 0 5px;
 }
 
 .form-input {
