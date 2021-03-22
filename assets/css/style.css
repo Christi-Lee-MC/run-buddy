@@ -148,6 +148,7 @@ section {
 }
 
 .form-input {
+  background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -156,6 +157,10 @@ section {
   width: 100%;
   margin-bottom: 15px; 
   border-radius: 10px;
+}
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
 .hero-form label {
