@@ -13,11 +13,18 @@ body {
 /* HEADER / NAV BAR STYLES START */
 
 header {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 header h1 {
@@ -25,6 +32,7 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: #fce138;
+  align-items: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -40,16 +48,21 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  
+  align-items: center; 
   list-style: none;
 }
-
 header nav ul li a {
-  padding: 10px 15 px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 /* HEADER / NAVBAR STYLES END */
@@ -91,7 +104,8 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -148,7 +162,7 @@ section {
   margin: 0 5px;
 }
 
-.hero-form button {
+.hero-form button: {
   color: #fce138;
   background-color: #024e76;
   border: none;
@@ -156,6 +170,10 @@ section {
   font-size: 16px;
   border-radius: 10px;
 } 
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
 /* HERO STYLES END */
 
 
@@ -350,6 +368,11 @@ section {
   border-radius: 10px;
 }
 
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
 .contact-info a {
   color: #fce138;
 }
@@ -374,6 +397,7 @@ section {
   header {
   padding-bottom: 0;
   justify-content: center; 
+  position: relative;
 }
 header h1 {
   width: 100%;
@@ -386,6 +410,12 @@ header nav ul {
 }
 header nav ul li a {
   font-size: 20px;
+}
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 footer h2, footer div {
   text-align: center;
@@ -438,6 +468,9 @@ footer h2, footer div {
  .hero-form button {
    width: 100%;
  }
+ .hero-form button:hover {
+  background-color: #39a6b2;  
+}
  .section-title {
    width: 95%;
  }
@@ -456,4 +489,5 @@ footer h2, footer div {
 .contact-form {
   order: 3;
 }
+
 }
