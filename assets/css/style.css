@@ -224,11 +224,13 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -351,6 +353,7 @@ section {
 }
 
 .contact-form input, .contact-form textarea {
+  background-color: rgba(255,255,255, 0.75);
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -361,7 +364,10 @@ section {
   margin-top: 5px;
   border-radius: 10px;
 }
-
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
 .contact-form button {
   width: 100%;
   border: none;
